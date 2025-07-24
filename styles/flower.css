@@ -1,3 +1,7 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 /* Fonts */
 .noto-serif-regular {
   font-family: "Noto Serif", serif;
@@ -70,10 +74,11 @@ body {
   text-align: left;
 }
 .hero h2 {
+  margin-top: 70px;
   font-size: 4em;
   font-weight: 700;
   padding-top: 10px;
-  padding-bottom: -200px;
+  margin-bottom: 13px;
   width: auto;
   line-height: 1.1;
 }
@@ -94,12 +99,77 @@ body {
   height: auto;
   display: block;
 }
+/* Our Plants Section */
+.our-plants {
+  margin-top: 120px;
+  text-align: center;
+}
+.our-plants-text {
+  justify-items: center;
+}
+.our-plants-text h2 {
+  font-size: 3.1em;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.our-plants-text p {
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 0px;
+  font-size: 1.4em;
+  max-width: 888px;
+  align-items: center;
+  margin-bottom: 49px;
+}
+.flower-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.card p {
+  font-size: 1.3em;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  padding: 19px 60px;
+  font-weight: 400;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #e95a08;
+  color: #252432;
+}
 
 /* Responsive Section */
 @media screen and (max-width: 576px) {
   /* Header Menu Section */
   .container {
-    max-width: 476px;
+    max-width: 456px;
     margin: 10px auto;
   }
   .logo img {
@@ -128,14 +198,31 @@ body {
   .image-section-hero {
     order: 1;
     width: 100%;
+    margin-right: -40px;
   }
   .text-section-hero {
     order: 2;
+    margin-top: -40px;
   }
   .hero h2 {
     font-size: 1.9em;
   }
   .hero p {
     font-size: 1.05em;
+  }
+
+  /* Our Plants */
+  .our-plants-text h2 {
+    font-size: 1.9em;
+    margin-top: 40px;
+  }
+  .our-plants-text p {
+    font-size: 1.05em;
+  }
+  .flower-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
   }
 }

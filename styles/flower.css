@@ -1,5 +1,5 @@
 /* Fonts */
-.noto-serif-regular > {
+.noto-serif-regular {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -23,7 +23,11 @@ body {
   background-color: #f5f8ff;
 }
 
-/* Header Section */
+.orange {
+  color: #e95a08;
+}
+
+/* Header Menu Section */
 .logo img {
   height: 82px;
   width: 132px;
@@ -52,8 +56,48 @@ body {
   color: #252432;
 }
 
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 109px;
+}
+.text-section-hero {
+  flex: 1;
+  padding-right: 40px;
+  text-align: left;
+}
+.hero h2 {
+  font-size: 4em;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: -200px;
+  width: auto;
+  line-height: 1.1;
+}
+.hero p {
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 0px;
+  font-size: 1.4em;
+}
+.image-section-hero {
+  width: 50%;
+  flex-shrink: 0;
+  max-width: 670px;
+  position: relative;
+  overflow: hidden;
+}
+.image-section-hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Responsive Section */
 @media screen and (max-width: 576px) {
+  /* Header Menu Section */
   .container {
     max-width: 476px;
     margin: 10px auto;
@@ -74,5 +118,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    order: 1;
+  }
+  .image-section-hero {
+    order: 1;
+    width: 100%;
+  }
+  .text-section-hero {
+    order: 2;
+  }
+  .hero h2 {
+    font-size: 1.9em;
+  }
+  .hero p {
+    font-size: 1.05em;
   }
 }

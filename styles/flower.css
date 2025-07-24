@@ -1,0 +1,78 @@
+/* Fonts */
+.noto-serif-regular > {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* Inter */
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Common Code */
+.container {
+  max-width: 1140px;
+  margin: 30px auto;
+}
+body {
+  background-color: #f5f8ff;
+}
+
+/* Header Section */
+.logo img {
+  height: 82px;
+  width: 132px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+.nav a {
+  text-decoration: none;
+  color: #8987a1;
+  font-size: ;
+}
+
+.bold-nav-home {
+  color: #252432;
+  font-weight: 700;
+}
+.bold-nav-cart {
+  color: #252432;
+}
+
+/* Responsive Section */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 476px;
+    margin: 10px auto;
+  }
+  .logo img {
+    height: 38px;
+    width: 63px;
+  }
+  .nav ul {
+    visibility: hidden;
+    display: flex;
+    gap: 0px;
+  }
+  .cart {
+    visibility: visible;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

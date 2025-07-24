@@ -196,6 +196,160 @@ body {
   line-height: 1.5;
 }
 
+/*Latest Deals*/
+.deals-text {
+  margin-top: 120px;
+  text-align: center;
+  justify-items: center;
+}
+
+.deals-text h2 {
+  font-size: 3.1em;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.deals-text p {
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 0px;
+  font-size: 1.4em;
+  max-width: 888px;
+  align-items: center;
+  margin-bottom: 49px;
+}
+.deals-images {
+  display: flex;
+  gap: 28px;
+}
+.container-right-up {
+  position: relative;
+}
+.right-up-deals-images {
+  margin-bottom: 25px;
+}
+
+.right-up-deals-images img {
+  border-radius: 14px;
+  filter: grayscale(0.9) saturate(6);
+}
+.text-block-1 {
+  position: absolute;
+  color: white;
+  top: 80px;
+  left: 30px;
+  padding-left: 49px;
+  padding-right: 49px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+}
+.container-right-down {
+  position: relative;
+}
+.right-down-deals-images img {
+  border-radius: 14px;
+  filter: grayscale(0.9) saturate(6);
+}
+.text-block-2 {
+  position: absolute;
+  color: white;
+  top: 80px;
+  left: 30px;
+  padding-left: 49px;
+  padding-right: 49px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+}
+.container-left {
+  position: relative;
+}
+.left-deals-images img {
+  border-radius: 14px;
+  filter: grayscale(0.9) saturate(6);
+}
+.text-block-3 {
+  position: absolute;
+  color: white;
+  top: 180px;
+  left: 130px;
+  padding-left: 49px;
+  padding-right: 49px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+}
+.text-block-3 h4 {
+  font-size: 2.5em;
+}
+.text-block-3 a {
+  font-size: 1.6em;
+}
+
+/* Join the colorful Bunch */
+.join {
+  align-items: center;
+  justify-items: center;
+}
+.container-join img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -220px;
+  width: 100%;
+}
+.container-join {
+  position: relative;
+  min-height: 533px;
+  top: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.text-block-join {
+  position: absolute;
+  color: white;
+  top: 3950px;
+  left: 700px;
+  z-index: 2;
+  max-width: 800px;
+  width: 100%;
+}
+.text-block-join h2 {
+  font-weight: 700;
+  font-size: 3.1em;
+  margin-bottom: 30px;
+}
+.subscribe-form input[type="email"] {
+  flex-grow: 1;
+  padding: 11px 150px;
+  border: none;
+  font-size: 1.1em;
+  outline: none;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+}
+.subscribe-form input[type="email"]::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.subscribe-form button[type="submit"] {
+  padding: 11px 40px;
+  background-color: #e95a08;
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
 /* Responsive Section */
 @media screen and (max-width: 576px) {
   /* Header Menu Section */
@@ -281,4 +435,79 @@ body {
     line-height: 1.5;
     margin-left: 10px;
   }
+
+  /*Latest Deals*/
+
+  .deals-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 28px;
+  }
+  .deals-text h2 {
+    font-size: 1.9em;
+    margin-bottom: 20px;
+  }
+  .deals-text p {
+    font-size: 1.05em;
+  }
+  .right-up-deals-images img {
+    width: 100%;
+    max-width: 440px;
+  }
+  .right-down-deals-images img {
+    width: 100%;
+    max-width: 440px;
+  }
+  .left-deals-images img {
+    width: 100%;
+    max-width: 440px;
+  }
+  .text-block-1 {
+    top: 100px;
+    left: 70px;
+  }
+  .text-block-2 {
+    top: 100px;
+    left: 80px;
+  }
+  .text-block-3 {
+    top: 100px;
+    left: 60px;
+  }
+  .text-block-3 h4 {
+    font-size: 1.4em;
+  }
+  .text-block-3 a {
+    font-size: 1em;
+  }
+
+  /* Join the colorful Bunch Section */
+  .container-join img {
+    margin-top: -300px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-block-join h2 {
+    font-size: 1.8em;
+  }
+  .subscribe-form input[type="email"] {
+    padding: 11px 15px;
+    font-size: 1em;
+  }
+  .subscribe-form button[type="submit"] {
+    padding: 11px 15px;
+    font-size: 1em;
+  }
+  .text-block-join {
+    position: absolute;
+    color: white;
+    top: 5000px;
+    left: 100px;
+    z-index: 2;
+    max-width: 800px;
+    width: 100%;
+  }
+  .container-join {
+  top: 80px;
 }
